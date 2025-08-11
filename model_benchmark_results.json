@@ -1,0 +1,94 @@
+{
+  "llama3.1:8b": {
+    "success": true,
+    "load_time": 8.187583208084106,
+    "gpu_memory_mb": 552.0,
+    "ram_memory_mb": -1307.45703125,
+    "total_gpu_mb": 6136.0,
+    "total_ram_mb": 3669.33203125,
+    "response_length": 229,
+    "sample_response": "I'm just a language model, I don't have emotions or feelings like humans do, but thank you for askin..."
+  },
+  "mistral:7b": {
+    "success": true,
+    "load_time": 5.7887961864471436,
+    "gpu_memory_mb": -552.0,
+    "ram_memory_mb": -708.12890625,
+    "total_gpu_mb": 5584.0,
+    "total_ram_mb": 3038.1171875,
+    "response_length": 495,
+    "sample_response": " I'm just a computer program, so I don't have feelings or emotions. How can I assist you today?\n\nHer..."
+  },
+  "llama3.2:3b": {
+    "success": true,
+    "load_time": 4.631937742233276,
+    "gpu_memory_mb": -2200.0,
+    "ram_memory_mb": -321.328125,
+    "total_gpu_mb": 3384.0,
+    "total_ram_mb": 2746.21484375,
+    "response_length": 196,
+    "sample_response": "I'm just a language model, so I don't have emotions or feelings like humans do, but I'm functioning ..."
+  },
+  "phi3:3.8b": {
+    "success": true,
+    "load_time": 3.126703977584839,
+    "gpu_memory_mb": 3092.0,
+    "ram_memory_mb": 322.25,
+    "total_gpu_mb": 6476.0,
+    "total_ram_mb": 3166.6171875,
+    "response_length": 294,
+    "sample_response": "I'm an AI and don't have feelings, but I appreciate the sentiment! How can I assist you in your ende..."
+  },
+  "gemma:2b": {
+    "success": true,
+    "load_time": 3.7879152297973633,
+    "gpu_memory_mb": -998.0,
+    "ram_memory_mb": 85.22265625,
+    "total_gpu_mb": 5478.0,
+    "total_ram_mb": 3249.3515625,
+    "response_length": 129,
+    "sample_response": "I am doing well, thank you for asking! I am enjoying the beautiful sunshine and pleasant autumn weat..."
+  },
+  "concurrent": {
+    "llama3.2:7b+llama3.2:3b": {
+      "total_time": 6.877533435821533,
+      "gpu_usage": 1000.0,
+      "ram_usage": 28.0546875,
+      "total_gpu": 6478.0,
+      "total_ram": 3322.65234375,
+      "model1_success": false,
+      "model2_success": true,
+      "overall_success": false
+    },
+    "llama3.2:7b+phi3:3.8b": {
+      "total_time": 1.6808552742004395,
+      "gpu_usage": 0.0,
+      "ram_usage": 26.6171875,
+      "total_gpu": 6478.0,
+      "total_ram": 3340.2421875,
+      "model1_success": false,
+      "model2_success": true,
+      "overall_success": false
+    },
+    "mistral:7b+llama3.2:3b": {
+      "total_time": 11.124392986297607,
+      "gpu_usage": -3094.0,
+      "ram_usage": -190.25390625,
+      "total_gpu": 3384.0,
+      "total_ram": 3114.24609375,
+      "model1_success": true,
+      "model2_success": true,
+      "overall_success": true
+    },
+    "mistral:7b+phi3:3.8b": {
+      "total_time": 7.761191129684448,
+      "gpu_usage": 2200.0,
+      "ram_usage": 42.96484375,
+      "total_gpu": 5584.0,
+      "total_ram": 3102.8671875,
+      "model1_success": true,
+      "model2_success": true,
+      "overall_success": true
+    }
+  }
+}

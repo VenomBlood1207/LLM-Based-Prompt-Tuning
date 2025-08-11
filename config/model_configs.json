@@ -1,0 +1,58 @@
+{
+  "llama3.2:7b": {
+    "context_length": 4096,
+    "memory_requirement": "~6GB",
+    "strengths": [
+      "reasoning",
+      "general_knowledge",
+      "creative_writing"
+    ],
+    "optimal_use_cases": [
+      "complex_tasks",
+      "long_context",
+      "detailed_responses"
+    ]
+  },
+  "llama3.2:3b": {
+    "context_length": 4096,
+    "memory_requirement": "~2GB",
+    "strengths": [
+      "efficiency",
+      "quick_responses",
+      "prompt_analysis"
+    ],
+    "optimal_use_cases": [
+      "prompt_optimization",
+      "quick_analysis",
+      "classification"
+    ]
+  },
+  "mistral:7b": {
+    "context_length": 8192,
+    "memory_requirement": "~6GB",
+    "strengths": [
+      "coding",
+      "technical_content",
+      "structured_output"
+    ],
+    "optimal_use_cases": [
+      "code_generation",
+      "technical_writing",
+      "analysis"
+    ]
+  },
+  "phi3:3.8b": {
+    "context_length": 4096,
+    "memory_requirement": "~2.5GB",
+    "strengths": [
+      "reasoning",
+      "mathematics",
+      "compact_responses"
+    ],
+    "optimal_use_cases": [
+      "logical_tasks",
+      "optimization",
+      "brief_analysis"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "gpu": {
+    "model": "RTX 4060",
+    "memory_gb": 8,
+    "memory_mb": 8192,
+    "cuda_cores": 3072,
+    "optimal_utilization": 0.85
+  },
+  "cpu": {
+    "model": "Intel i7-14650HK",
+    "cores": 20,
+    "threads": 20,
+    "base_clock_ghz": 3.5,
+    "boost_clock_ghz": 5.2
+  },
+  "memory": {
+    "total_gb": 16,
+    "available_for_models_gb": 12,
+    "swap_enabled": true
+  },
+  "benchmarks": {
+    "models_tested": [
+      "llama3.1:8b",
+      "mistral:7b",
+      "llama3.2:3b",
+      "phi3:3.8b",
+      "gemma:2b",
+      "concurrent"
+    ],
+    "optimal_combination": "mistral:7b+llama3.2:3b",
+    "max_concurrent_gpu_usage_mb": 6000,
+    "recommended_batch_size": 5
+  },
+  "limits": {
+    "max_gpu_memory_mb": 7000,
+    "max_concurrent_models": 2,
+    "timeout_seconds": 120,
+    "retry_attempts": 3
+  }
+}

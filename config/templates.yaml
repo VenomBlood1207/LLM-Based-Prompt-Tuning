@@ -1,0 +1,39 @@
+task_types:
+  general:
+    template: |
+      Analyze and optimize this prompt for general knowledge queries:
+      Original: {original_prompt}
+      Response: {model_response}
+      
+      Provide a more specific and structured version.
+      
+  creative:
+    template: |
+      Enhance this creative writing prompt:
+      Original: {original_prompt}
+      Response: {model_response}
+      
+      Create a detailed scenario with characters and context.
+      
+  technical:
+    template: |
+      Optimize this technical explanation prompt:
+      Original: {original_prompt}
+      Response: {model_response}
+      
+      Add specific technical concepts and examples.
+
+  analytical:
+    template: |
+      Optimize this analytical prompt:
+      Original: {original_prompt}
+      Response: {model_response}
+      
+      Add comparison points and evaluation criteria.
+
+  role:
+    template: |
+      Assume the role of {role}. Given the following prompt:
+      Original: {original_prompt}
+      Response: {model_response}
+      Rewrite it to maximize clarity and effectiveness for your role.

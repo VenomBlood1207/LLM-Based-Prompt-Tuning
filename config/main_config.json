@@ -1,0 +1,71 @@
+{
+  "system": {
+    "ollama_url": "http://localhost:11434",
+    "max_retries": 3,
+    "timeout": 120,
+    "log_level": "INFO",
+    "hardware_profile": "rtx4060_16gb"
+  },
+  "models": {
+    "model1": {
+      "name": "mistral:7b",
+      "role": "task_executor",
+      "parameters": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "max_tokens": 2048,
+        "context_length": 8192
+      },
+      "memory_usage_mb": 5569,
+      "specialties": [
+        "technical_content",
+        "structured_output",
+        "reasoning"
+      ]
+    },
+    "model2": {
+      "name": "llama3.2:3b",
+      "role": "prompt_optimizer",
+      "parameters": {
+        "temperature": 0.3,
+        "top_p": 0.8,
+        "max_tokens": 1024,
+        "context_length": 4096
+      },
+      "memory_usage_mb": 2200,
+      "specialties": [
+        "efficiency",
+        "analysis",
+        "prompt_refinement"
+      ]
+    }
+  },
+  "optimization": {
+    "max_iterations": 3,
+    "improvement_threshold": 0.15,
+    "evaluation_metrics": [
+      "response_length",
+      "coherence",
+      "task_completion"
+    ],
+    "save_intermediate_results": true,
+    "concurrent_execution": true,
+    "memory_monitoring": true
+  },
+  "evaluation": {
+    "batch_size": 5,
+    "human_evaluation": false,
+    "auto_save_results": true,
+    "quality_threshold": 0.7,
+    "comparison_methods": [
+      "before_after",
+      "statistical_significance"
+    ]
+  },
+  "performance": {
+    "expected_gpu_usage_mb": 3390,
+    "expected_response_time_s": 9.44,
+    "memory_safety_buffer_mb": 500,
+    "cpu_fallback_enabled": true
+  }
+}
