@@ -1,56 +1,105 @@
-# LLM Prompt Optimization System
+# LLM-Based-Prompt-Tuning
 
-An intelligent system that automatically optimizes prompts using dual LLM architecture.
+An intelligent system for optimizing prompts using dual LLM architecture with automated evaluation and persistence.
 
-## Project Overview
+## 🚀 Features
 
-This system uses two Large Language Models working in tandem:
-- **Model1**: Task executor that generates responses to prompts
-- **Model2**: Prompt optimizer that analyzes and improves prompts
+- **Dual-Model Architecture**: Uses two LLMs (mistral, llama2) for optimization
+- **Advanced Prompt Engineering**: Role-based templates and context management
+- **Comprehensive Evaluation**: BLEU, ROUGE, and semantic similarity metrics
+- **Data Persistence**: SQLite-based storage for optimization results
+- **Automated Testing**: Full test suite across different prompt categories
+- **Performance Monitoring**: GPU usage and response time tracking
 
-## Current Status
+## 📋 Prerequisites
 
-- [x] Day 1: Environment setup and model testing
-- [x] Day 2: Model benchmarking and optimization
-- [ ] Day 3-4: Core architecture design
-- [ ] Day 5-7: Initial implementation
+- Python 3.12+
+- [Ollama](https://ollama.ai/)
+- CUDA-capable GPU (recommended)
+- Linux environment
 
-## Quick Start
+## 🛠️ Installation
 
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd LLM_PROJECT
 
-2. Run model benchmarking:
-   ```bash
-   python model_memory_test.py
-   ```
+# Create and activate virtual environment
+python -m venv .venv
+source .venv/bin/activate
 
-3. Check configuration:
-   ```bash
-   cat config/main_config.json
-   ```
+# Install dependencies
+pip install -r requirements.txt
 
-## Hardware Requirements
-
-- Intel i7-14650HK processor
-- 16GB RAM
-- RTX 4060 GPU (8GB VRAM)
-- Ollama runtime
-
-## Project Structure
-
-```
-├── src/           # Source code
-├── config/        # Configuration files
-├── data/          # Data storage
-├── logs/          # Log files
-├── tests/         # Test files
-├── docs/          # Documentation
-└── experiments/   # Experimental code
+# Download required models
+ollama pull mistral
+ollama pull llama2
 ```
 
-## Next Steps
+## 💻 Usage
 
-See the 30-day roadmap in the project documentation.
+```bash
+# Run the optimization pipeline
+python src/optimization/pipeline.py
+
+# Run evaluation and generate reports
+python src/evaluation/evaluation_pipeline.py
+
+# Run all tests
+python -m unittest discover -v
+```
+
+## 📁 Project Structure
+
+```
+LLM_PROJECT/
+├── config/           # Configuration files
+├── data/            # Data storage
+├── src/
+│   ├── config/      # Configuration management
+│   ├── data_persistence/
+│   ├── evaluation/  # Metrics & evaluation
+│   ├── logging/     # Performance monitoring
+│   ├── models/      # Model interfaces
+│   └── optimization/# Core optimization
+└── tests/
+    ├── integration/
+    ├── prompt_suite/
+    └── unit/
+```
+
+## ⚙️ Configuration
+
+Edit files in `config/`:
+- `config.yaml`: Main configuration
+- `templates.yaml`: Prompt templates
+
+## 📊 Evaluation
+
+Results are saved in:
+- `evaluation_results.csv`
+- `evaluation_results.md`
+
+## 📖 Documentation
+
+See `docs/` for:
+- Project roadmap
+- Architecture decisions
+- Performance benchmarks
+
+## 🧪 Testing
+
+```bash
+# Run specific test suites
+python -m unittest tests/prompt_suite/test_prompt_categories.py
+python -m unittest tests/integration/test_database.py
+```
+
+## 📜 License
+
+[MIT](LICENSE)
+
+## 🤝 Contributing
+
+Pull requests are welcome! Please open an issue first to discuss proposed changes.
